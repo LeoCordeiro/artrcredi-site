@@ -292,7 +292,7 @@ function maskPhone(e) {
 
 function submitRide() {
   const msg = `Olá! Quero solicitar uma corrida pela WFM Transportes.\n\nOrigem: ${rideForm.origem}\nDestino: ${rideForm.destino}\nData: ${rideForm.data || 'Não informada'}\nHorário: ${rideForm.horario || 'Não informado'}\nPassageiros: ${rideForm.passageiros}\n\nNome: ${rideForm.nome}\nEmpresa: ${rideForm.empresa || 'Não informado'}\nE-mail: ${rideForm.email || 'Não informado'}`
-  window.open(`https://wa.me/5511999999999?text=${encodeURIComponent(msg)}`, '_blank')
+  window.open(`https://wa.me/556499216904?text=${encodeURIComponent(msg)}`, '_blank')
   rideSubmitted.value = true
 }
 

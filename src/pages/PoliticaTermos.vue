@@ -49,7 +49,7 @@
         <!-- Rodapé legal -->
         <div class="legal-footer" v-reveal>
           <p>WFM Transportes · CNPJ 56.265.821/0001-04 · São Paulo, SP</p>
-          <p>wiuslei@wfmtransportes.com.br · (11) 99999-9999</p>
+          <p>atendimento@wfmtransportes.com.br · (64) 9921-6904</p>
           <p style="margin-top:4px;font-size:12px;color:#404040">Foro competente: Comarca de São Paulo, SP</p>
         </div>
       </div>
