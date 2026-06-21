@@ -7,11 +7,15 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        copper: {
-          300: '#E8C9A0',
-          400: '#C9956C',
-          500: '#B8845B',
-          600: '#9A6B42',
+        petrol: {
+          dark: '#042F33',
+          400: '#0E7490',
+          500: '#0E7490',
+          600: '#042F33',
+        },
+        cyan: {
+          400: '#22D3EE',
+          light: '#F0FAFB',
         },
       },
       fontFamily: {

@@ -1,12 +1,59 @@
-/* ─── Fluxora fadeSlideIn ─── */
-@keyframes fadeSlideIn {
-  0%   { opacity: 0; transform: translateY(24px); filter: blur(6px); }
-  100% { opacity: 1; transform: translateY(0);    filter: blur(0px); }
+/* Scroll reveal */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1), transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.reveal-left {
+  opacity: 0;
+  transform: translateX(-40px);
+  transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1), transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.reveal-right {
+  opacity: 0;
+  transform: translateX(40px);
+  transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1), transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.reveal.is-visible, .reveal-left.is-visible, .reveal-right.is-visible,
+.reveal.active, .reveal-left.active, .reveal-right.active {
+  opacity: 1;
+  transform: translate(0, 0);
 }
 
-/* ─── Hero stagger (monta automaticamente, sem observer) ─── */
+.reveal-child {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1), transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.stagger-up.active .reveal-child,
+.stagger-up.is-visible .reveal-child { opacity: 1; transform: translateY(0); }
+.stagger-up.active .reveal-child:nth-child(1),
+.stagger-up.is-visible .reveal-child:nth-child(1) { transition-delay: 0.05s; }
+.stagger-up.active .reveal-child:nth-child(2),
+.stagger-up.is-visible .reveal-child:nth-child(2) { transition-delay: 0.12s; }
+.stagger-up.active .reveal-child:nth-child(3),
+.stagger-up.is-visible .reveal-child:nth-child(3) { transition-delay: 0.19s; }
+.stagger-up.active .reveal-child:nth-child(4),
+.stagger-up.is-visible .reveal-child:nth-child(4) { transition-delay: 0.26s; }
+.stagger-up.active .reveal-child:nth-child(5),
+.stagger-up.is-visible .reveal-child:nth-child(5) { transition-delay: 0.33s; }
+.stagger-up.active .reveal-child:nth-child(6),
+.stagger-up.is-visible .reveal-child:nth-child(6) { transition-delay: 0.40s; }
+
+/* Reveal from right */
+.reveal-from-right {
+  opacity: 0;
+  transform: translateX(60px);
+  transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1), transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.reveal-from-right.is-visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Hero stagger */
 .hero-anim {
-  animation: fadeSlideIn 0.75s cubic-bezier(0.22, 1, 0.36, 1) both;
+  animation: fadeSlideIn 0.75s cubic-bezier(0.16, 1, 0.3, 1) both;
 }
 .hero-anim-1 { animation-delay: 0.0s; }
 .hero-anim-2 { animation-delay: 0.1s; }
@@ -15,29 +62,22 @@
 .hero-anim-5 { animation-delay: 0.45s; }
 .hero-anim-6 { animation-delay: 0.55s; }
 
-/* ─── Page header (monta automaticamente) ─── */
+@keyframes fadeSlideIn {
+  0%   { opacity: 0; transform: translateY(24px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Page header */
 .page-anim {
-  animation: fadeSlideIn 0.7s cubic-bezier(0.22, 1, 0.36, 1) both;
+  animation: fadeSlideIn 0.7s cubic-bezier(0.16, 1, 0.3, 1) both;
 }
 .page-anim-1 { animation-delay: 0.0s; }
 .page-anim-2 { animation-delay: 0.1s; }
 .page-anim-3 { animation-delay: 0.2s; }
 
-/* ─── Scroll reveal (v-reveal directive) ─── */
-.reveal {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.6s cubic-bezier(0.22, 1, 0.36, 1),
-              transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
-}
-.reveal.is-visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-/* ─── Page transition ─── */
+/* Page transitions */
 .page-enter-active {
-  transition: opacity 0.3s ease, transform 0.3s cubic-bezier(0.22, 1, 0.36, 1);
+  transition: opacity 0.3s ease, transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 }
 .page-leave-active {
   transition: opacity 0.18s ease;

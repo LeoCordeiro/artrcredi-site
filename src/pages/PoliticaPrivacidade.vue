@@ -2,8 +2,8 @@
   <div>
 
     <!-- Header -->
-    <section style="padding-top:64px;padding-bottom:36px">
-      <div class="wrap" style="max-width:900px">
+    <section style="padding-top:124px;padding-bottom:36px">
+      <div class="container" style="max-width:900px">
         <div class="page-anim page-anim-1 eyebrow-row">
           <span class="eyebrow-label">Legal</span>
           <div class="eyebrow-line"></div>
@@ -15,10 +15,10 @@
 
     <!-- LGPD badge + princípios -->
     <section style="padding-bottom:28px">
-      <div class="wrap" style="max-width:900px">
+      <div class="container" style="max-width:900px">
         <div class="lgpd-banner page-anim page-anim-4">
           <div class="lgpd-badge">
-            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#F97316" stroke-width="1.5" stroke-linecap="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#22D3EE" stroke-width="1.5" stroke-linecap="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
             <span>LGPD Compliant</span>
           </div>
           <p class="lgpd-text">Seus dados são tratados com responsabilidade e transparência. Coletamos apenas o necessário para prestar o serviço de representação.</p>
@@ -28,11 +28,11 @@
 
     <!-- Seções de privacidade -->
     <section style="padding-bottom:80px">
-      <div class="wrap" style="max-width:900px">
+      <div class="container" style="max-width:900px">
         <div style="display:flex;flex-direction:column;gap:14px">
           <div v-for="(s, i) in sections" :key="s.title" class="priv-card" v-reveal="{ delay: i * 50 }">
             <div class="priv-icon">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#F97316" stroke-width="1.5" stroke-linecap="round" v-html="s.icon"></svg>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#22D3EE" stroke-width="1.5" stroke-linecap="round" v-html="s.icon"></svg>
             </div>
             <div>
               <h2 class="priv-title">{{ s.title }}</h2>
@@ -43,25 +43,21 @@
 
         <!-- Direito de acesso -->
         <div class="access-card" v-reveal>
-          <h3 style="font-size:14px;font-weight:600;color:#1C1C1E;margin-bottom:12px">Exercer seus direitos</h3>
-          <p style="font-size:13.5px;color:#666666;line-height:1.65;margin-bottom:16px">
-            Para acessar, corrigir ou solicitar exclusão dos seus dados, entre em contato diretamente pelo e-mail ou WhatsApp abaixo.
+          <h3 style="font-size:14px;font-weight:300;color:var(--heading);margin-bottom:12px">Exercer seus direitos</h3>
+          <p style="font-size:13.5px;color:var(--muted);line-height:1.65;margin-bottom:16px">
+            Para acessar, corrigir ou solicitar exclusao dos seus dados, entre em contato diretamente pelo e-mail abaixo.
           </p>
           <div style="display:flex;flex-wrap:wrap;gap:10px">
-            <a href="mailto:atendimento@wfmtransportes.com.br" class="contact-link">
+            <a href="mailto:contato@artrcredi.com.br" class="contact-link">
               <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 7 10-7"/></svg>
-              atendimento@wfmtransportes.com.br
-            </a>
-            <a href="https://wa.me/556499216904" target="_blank" class="contact-link">
-              <svg width="13" height="13" viewBox="0 0 24 24" fill="#4ade80"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374A9.86 9.86 0 012.157 12C2.16 6.55 6.595 2.116 12.047 2.116c2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-              (64) 9921-6904
+              contato@artrcredi.com.br
             </a>
           </div>
         </div>
 
         <!-- Empresa -->
         <div class="legal-footer" v-reveal>
-          <p>WFM Transportes · CNPJ 56.265.821/0001-04 · São Paulo, SP</p>
+          <p>ArtrCredi · CNPJ 67.089.141/0001-01 · Sao Paulo, SP</p>
         </div>
       </div>
     </section>
@@ -106,96 +102,54 @@ const sections = [
 
 <style scoped>
 .eyebrow-row   { margin-bottom:18px }
-.eyebrow-label { font-size:10.5px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:#F97316;display:block;margin-bottom:10px }
-.eyebrow-line  { height:1px;background:linear-gradient(to right,rgba(249,115,22,0.35),#E5E5E5,transparent) }
-.page-h1       { font-size:clamp(2rem,5vw,3.6rem);font-weight:700;letter-spacing:0em;line-height:1.08;color:#1C1C1E;margin-bottom:12px }
-.page-sub      { font-size:15px;color:#666666;line-height:1.65 }
+.eyebrow-label { font-size:0.6rem;font-weight:500;letter-spacing:.12em;text-transform:uppercase;color:var(--accent-light);display:block;margin-bottom:10px }
+.eyebrow-line  { height:1px;background:linear-gradient(to right,var(--border-l),var(--border-s),transparent) }
+.page-h1       { font-size:clamp(2rem,5vw,3.6rem);font-weight:200;letter-spacing:-0.03em;line-height:1.08;color:var(--heading);margin-bottom:12px }
+.page-sub      { font-size:0.86rem;color:var(--muted);line-height:1.65 }
 
-/* LGPD banner */
 .lgpd-banner {
-  display: flex;
-  align-items: flex-start;
-  gap: 18px;
-  flex-wrap: wrap;
-  padding: 20px 24px;
-  border-radius: 14px;
-  border: 1px solid rgba(249,115,22,0.2);
-  background: #FEF0E7;
+  display:flex; align-items:flex-start; gap:18px; flex-wrap:wrap;
+  padding:20px 24px; border-radius:14px;
+  border:1px solid var(--border-m); background:rgba(14,116,144,0.05);
 }
 .lgpd-badge {
-  display: flex;
-  align-items: center;
-  gap: 7px;
-  padding: 6px 14px;
-  border-radius: 9999px;
-  border: 1px solid rgba(249,115,22,0.3);
-  background: rgba(249,115,22,0.12);
-  font-size: 12px;
-  font-weight: 700;
-  color: #EA580C;
-  white-space: nowrap;
-  flex-shrink: 0;
+  display:flex; align-items:center; gap:7px; padding:6px 14px;
+  border-radius:9999px; border:1px solid rgba(14,116,144,0.3);
+  background:rgba(14,116,144,0.1); font-size:12px; font-weight:500;
+  color:var(--accent-light); white-space:nowrap; flex-shrink:0;
 }
-.lgpd-text { font-size:13.5px;color:#666666;line-height:1.65;flex:1;min-width:200px }
+.lgpd-text { font-size:0.8rem;color:var(--muted);line-height:1.65;flex:1;min-width:200px }
 
-/* Privacy cards */
 .priv-card {
-  display: flex;
-  gap: 20px;
-  padding: 22px 26px;
-  border-radius: 16px;
-  border: 1px solid #E5E5E5;
-  background: #FFFFFF;
-  transition: border-color .2s, background .2s;
+  display:flex; gap:20px; padding:22px 26px; border-radius:16px;
+  border:1px solid var(--border-s); background:var(--bg-1);
+  transition:border-color .2s, background .2s;
 }
-.priv-card:hover {
-  border-color: rgba(249,115,22,0.3);
-  background: #FEF0E7;
-}
+.priv-card:hover { border-color:var(--border-m); background:rgba(14,116,144,0.05); }
 .priv-icon {
-  width: 36px; height: 36px;
-  border-radius: 10px;
-  background: #FEF0E7;
-  border: 1px solid rgba(249,115,22,0.25);
-  display: flex; align-items: center; justify-content: center;
-  flex-shrink: 0;
+  width:36px; height:36px; border-radius:10px;
+  background:rgba(14,116,144,0.08); border:1px solid rgba(14,116,144,0.2);
+  display:flex; align-items:center; justify-content:center; flex-shrink:0;
 }
-.priv-title { font-size:14px;font-weight:600;color:#1C1C1E;margin-bottom:8px }
-.priv-text  { font-size:13.5px;color:#666666;line-height:1.7 }
+.priv-title { font-size:0.86rem;font-weight:300;color:var(--heading);margin-bottom:8px }
+.priv-text  { font-size:0.8rem;color:var(--muted);line-height:1.7 }
 
-/* Access card */
 .access-card {
-  margin-top: 28px;
-  padding: 24px 28px;
-  border-radius: 16px;
-  border: 1px solid #E5E5E5;
-  background: #F5F5F5;
+  margin-top:28px; padding:24px 28px; border-radius:16px;
+  border:1px solid var(--border-s); background:var(--bg-1);
 }
 .contact-link {
-  display: inline-flex;
-  align-items: center;
-  gap: 7px;
-  padding: 9px 16px;
-  border-radius: 10px;
-  font-size: 12.5px;
-  color: #666666;
-  border: 1px solid #E5E5E5;
-  background: #FFFFFF;
-  text-decoration: none;
-  word-break: break-all;
-  transition: color .2s, border-color .2s;
+  display:inline-flex; align-items:center; gap:7px; padding:9px 16px;
+  border-radius:10px; font-size:0.76rem; color:var(--muted);
+  border:1px solid var(--border-s); background:rgba(255,255,255,0.03);
+  text-decoration:none; word-break:break-all; transition:color .2s, border-color .2s;
 }
-.contact-link:hover { color: #1C1C1E; border-color: rgba(249,115,22,0.3); }
+.contact-link:hover { color:var(--heading); border-color:var(--border-m); }
 
-/* Legal footer */
 .legal-footer {
-  margin-top: 24px;
-  padding: 16px 20px;
-  border-radius: 12px;
-  border: 1px solid #E5E5E5;
-  background: #F5F5F5;
-  font-size: 12.5px;
-  color: #888888;
+  margin-top:24px; padding:16px 20px; border-radius:12px;
+  border:1px solid var(--border-s); background:var(--bg-1);
+  font-size:0.76rem; color:var(--muted);
 }
 
 @media(max-width:640px){
